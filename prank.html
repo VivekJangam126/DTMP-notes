@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTMP Notes and Question Papers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f7d9, #ffdac1);
+            color: #333;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .buttons button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            transform: scale(1.1);
+            background-color: #ff3e30;
+        }
+
+        .prank-message {
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .prank-message p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .meme-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .meme-links li {
+            margin: 10px 0;
+        }
+
+        .meme-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .meme-links a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        DTMP Notes and Question Papers
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to DTMP Resources</h1>
+        <p>Access all notes and question papers for your studies here!</p>
+        <div class="buttons">
+            <button onclick="showPrank()">View Notes</button>
+            <button onclick="showPrank()">View Question Papers</button>
+        </div>
+    </section>
+
+    <section class="prank-message" id="prankMessage">
+    <p>😂 अरे पढ़ाई की बात छोड़ो, ज़िंदगी में ठंड रखो! 😂</p>
+    <p>✨ **शायरी**:  
+       "पढ़ाई से मत कर इतना प्यार,  
+       सुकून भी है जिंदगी का अधिकार।  
+       नंबर आते-जाते रहेंगे,  
+       खुशी को मत तू भुला यार!" ✨  
+    </p>
+    <p>😂 और सुन, जिंदगी के मज़े लेने के लिए reels देख, पढ़ाई के tension के साथ dance भी होगा! 😂</p>
+    <p>"एक कप चाय, थोड़ी मस्ती, और मीम्स की बस्ती!"</p>
+    <p>चलो थोड़ा हंस लो, ये जिंदगी पढ़ाई से बड़ी है:</p>
+    <ul class="meme-links">
+        <li><a href="https://www.instagram.com/explore/tags/juicepilado/" target="_blank">जूस पिला दो 😂</a></li>
+        <li><a href="https://www.instagram.com/explore/tags/funnymemes/" target="_blank">फनी मीम्स 😜</a></li>
+        <li><a href="https://www.instagram.com/explore/tags/stressfreelife/" target="_blank">स्ट्रेस-फ्री लाइफ ✨</a></li>
+        <li><a href="https://www.instagram.com/explore/tags/chillvibes/" target="_blank">चिल वाइब्स 🌈</a></li>
+    </ul>
+</section>
+
+
+    <script>
+        function showPrank() {
+            document.querySelector('.hero').style.display = 'none';
+            document.getElementById('prankMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
